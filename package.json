@@ -1,0 +1,12 @@
+{
+  "name": "house-test-task",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xinos",
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

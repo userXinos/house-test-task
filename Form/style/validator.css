@@ -1,0 +1,21 @@
+.has-error {
+    color: #f57f6c;
+
+    animation-name: shakeError;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+}
+
+.has-error input {
+    border-color: #f57f6c;
+}
+
+@keyframes shakeError {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-.375rem);}
+    50% {transform: translateX(.375rem);}
+    75% {transform: translateX(-.375rem);}
+    100% {transform: translateX(0);}
+}

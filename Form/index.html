@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/validator.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From</title>
+  </head>
+  <body>
+  <div class="container">
+    <h2 class="header">Обратная форма</h2>
+    <form class="form__feedback" id="form-feedback" onsubmit="return false">
+      <div class="input-group">
+        <input required type="text" id="fullName" class="input-group__input"/>
+        <label class="input-group__label" for="fullName">ФИО</label>
+        <span class="input-group__error"></span>
+      </div>
+      <div class="input-group">
+        <input required type="text" id="phone" class="input-group__input"/>
+        <label class="input-group__label" for="phone">Телефон</label>
+        <span class="input-group__error"></span>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" class="input-group__input"/>
+        <label class="input-group__label" for="email">E-mail</label>
+        <span class="input-group__error"></span>
+      </div>
+      <div class="input-group input-group--textarea">
+        <textarea id="message" class="input-group__input" rows="10"></textarea>
+        <label class="input-group__label" for="message">Сообщение</label>
+        <span class="input-group__error"></span>
+      </div>
+
+      <div class="form__feedback__submit">
+        <p class="notice">
+          <span>Отправляя форму, Вы соглашаетесь на</span>
+          <a href="/">обработку персональных данных</a>
+        </p>
+        <button type="submit" class="form__feedback-submit--btn">
+          Отправить
+        </button>
+        <p class="notice" id="submitStatus"></p>
+      </div>
+    </form>
+  </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

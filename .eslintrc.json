@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2022
+  },
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "rules": {
+    "arrow-parens": ["error", "always"],
+    "prefer-destructuring": ["error"],
+    "indent": ["error", 4],
+    "lines-between-class-members": ["error", "always"],
+    "semi": ["error", "always"],
+
+    "max-len": 0
+  }
+}
