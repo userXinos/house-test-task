@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  gap: 10px;
+  margin: 5% 0;
+  width: 100%;
+
+  input {
+    flex: 9;
+  }
+  button {
+    flex: 1;
+  }
+}

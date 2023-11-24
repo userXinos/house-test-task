@@ -23,6 +23,12 @@ jobs:
           npm install --production
           npm run build
 
+      - name: Build 2
+        run: |
+          cd PostComments
+          npm install --production
+          npm run build
+
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
